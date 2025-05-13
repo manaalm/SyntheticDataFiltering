@@ -1,0 +1,132 @@
+{
+  "overview": {
+    "num_configurations": 7,
+    "configurations": [
+      "Baseline (No Filters)",
+      "Pre-Generation Filter Only",
+      "Post-Generation Filter Only",
+      "Pre+Post Filters",
+      "All Filters",
+      "All Filters (Strict)",
+      "Adaptive Thresholds"
+    ]
+  },
+  "privacy_metrics": {
+    "pii_leakage_rates": {
+      "Baseline (No Filters)": 0.0,
+      "Pre-Generation Filter Only": 0.0,
+      "Post-Generation Filter Only": 0.0,
+      "Pre+Post Filters": 0.0,
+      "All Filters": 0.0,
+      "All Filters (Strict)": 0.0,
+      "Adaptive Thresholds": 0.0
+    },
+    "canary_leakage_rates": {
+      "Baseline (No Filters)": 0.0,
+      "Pre-Generation Filter Only": 0.0,
+      "Post-Generation Filter Only": 0.0,
+      "Pre+Post Filters": 0.0,
+      "All Filters": 0.0,
+      "All Filters (Strict)": 0.0,
+      "Adaptive Thresholds": 0.0
+    },
+    "best_privacy_configuration": "Baseline (No Filters)"
+  },
+  "utility_metrics": {
+    "semantic_similarities": {
+      "Baseline (No Filters)": 0.6876073502935469,
+      "Pre-Generation Filter Only": 0.6224781853705644,
+      "Post-Generation Filter Only": 0.5849954656604678,
+      "Pre+Post Filters": 0.6001203941460699,
+      "All Filters": 0.6036281115189195,
+      "All Filters (Strict)": 0.5989488503709436,
+      "Adaptive Thresholds": 0.0029137006215751173
+    },
+    "perplexities": {
+      "Baseline (No Filters)": 32.55678845789338,
+      "Pre-Generation Filter Only": 23.231888911109845,
+      "Post-Generation Filter Only": 31.980329948419122,
+      "Pre+Post Filters": 22.98887197485737,
+      "All Filters": 29.330549638660617,
+      "All Filters (Strict)": 26.274495060584744,
+      "Adaptive Thresholds": 140.6536529608432
+    },
+    "best_utility_configuration": "Baseline (No Filters)"
+  },
+  "configurations": {
+    "baseline": {
+      "name": "Baseline (No Filters)",
+      "description": "No privacy filters applied",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.6876073502935469,
+        "perplexity": 32.55678845789338
+      }
+    },
+    "pre_only": {
+      "name": "Pre-Generation Filter Only",
+      "description": "Only pre-generation filtering applied",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.6224781853705644,
+        "perplexity": 23.231888911109845
+      }
+    },
+    "post_only": {
+      "name": "Post-Generation Filter Only",
+      "description": "Only post-generation filtering applied",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.5849954656604678,
+        "perplexity": 31.980329948419122
+      }
+    },
+    "pre_post": {
+      "name": "Pre+Post Filters",
+      "description": "Pre-generation and post-generation filters applied",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.6001203941460699,
+        "perplexity": 22.98887197485737
+      }
+    },
+    "all_filters": {
+      "name": "All Filters",
+      "description": "All privacy filters applied (pre, in, post)",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.6036281115189195,
+        "perplexity": 29.330549638660617
+      }
+    },
+    "all_strict": {
+      "name": "All Filters (Strict)",
+      "description": "All privacy filters with stricter settings",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.5989488503709436,
+        "perplexity": 26.274495060584744
+      }
+    },
+    "adaptive": {
+      "name": "Adaptive Thresholds",
+      "description": "All filters with content-dependent adaptive thresholds",
+      "key_metrics": {
+        "pii_leakage_rate": 0.0,
+        "canary_leakage_rate": 0.0,
+        "semantic_similarity": 0.0029137006215751173,
+        "perplexity": 140.6536529608432
+      }
+    }
+  },
+  "best_balanced_configuration": {
+    "name": "Baseline (No Filters)",
+    "score": 0.8438036751467735
+  }
+}
